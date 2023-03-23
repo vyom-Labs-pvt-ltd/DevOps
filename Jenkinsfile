@@ -7,6 +7,6 @@ stage('build') {
    sh 'mvn package'
 }
 stage('deploy') {
-   deploy adapters: [tomcat9(credentialsId: 'tomcatusers', path: '', url: 'http://172.31.23.215:8080')], contextPath: 'demo', war: '**/*.war'
+   deploy adapters: [tomcat9(credentialsId: 'tomcatusers', path: '', url: 'http://172.31.23.215:8080')], contextPath: 'aws', war: '**/*.war'
 }
 }
