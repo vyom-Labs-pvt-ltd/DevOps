@@ -34,6 +34,7 @@ node {
 		withCredentials([string(credentialsId: 'DockerHub', variable: 'DockerPass')]) {
 		sh 'ssh ec2-user@172.31.24.112 sudo docker login -u imruturaj -p ${DockerPass}'
 		sh 'ssh ec2-user@172.31.24.112 sudo docker rm -f myapp-container || true'
+		sh 'ssh ec2-user@172.31.24.112 sudo docker rmi -f imruturaj/project1 || true'
 		sh 'ssh ec2-user@172.31.24.112 sudo docker run -p 8080:8080 -d --name myapp-container imruturaj/project1'
 }
 }
