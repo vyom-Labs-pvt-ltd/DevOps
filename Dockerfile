@@ -1,5 +1,5 @@
 # Pull base image 
-FROM tomcat9 
+FROM tomcat:9
 
 # Maintainer
 MAINTAINER "ruturaj.jagtap@vyomlabs.com" 
