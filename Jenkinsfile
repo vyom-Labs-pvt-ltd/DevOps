@@ -9,7 +9,7 @@ node {
     stage('Continuous Build') {
     
     def mavenHome= tool name: "Maven" ,type: "maven"
-        sh "${mavenHome}/bin/mvn clean package"
+        sh "${mavenHome}/bin/mvn clean install"
 		}
 
 
