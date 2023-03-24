@@ -5,7 +5,7 @@
 
    <body>
 
-      Hello Team1 Which one will it be for you today?<br/>
+      Hello AWSteam Which one will it be for you today?<br/>
       <a href="#" onclick="playRoshambo('rock')"> rock </a>
       <a href="#" onclick="playRoshambo('paper')"> paper </a>
       <a href="#" onclick="playRoshambo('scissors')"> scissors </a>
