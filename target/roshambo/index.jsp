@@ -5,7 +5,7 @@
 
    <body>
 
-      Hii AWSteam Which one will it be for you today?<br/>
+      Hii AWS Which one will it be for you today?<br/>
       <a href="#" onclick="playRoshambo('rock')"> rock </a>
       <a href="#" onclick="playRoshambo('paper')"> paper </a>
       <a href="#" onclick="playRoshambo('scissors')"> scissors </a>
